@@ -2,7 +2,6 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-
     document.getElementById("navbar1").style.transition= "300ms";
     document.getElementById("navbar1").style.height= "60px";
     document.getElementById("navbar1").style.lineHeight= "60px";
