@@ -254,6 +254,15 @@ form button{
 
 /* RESPONSIVENES */
 @media (max-width:900px) {
+    #contact h3{
+        font-family: Ralewayl;
+    }
+    #blog h3{
+        font-family: Ralewayl;
+    }
+    #project h3{
+        font-family: Ralewayl;
+    }
     form{
         margin: 0px 10%;
     }
@@ -263,6 +272,7 @@ form button{
     }
     #abtc h3{
         text-align: center;
+        font-family: Ralewayl;
         margin: 0px;
     }
     #wonder{
@@ -286,6 +296,9 @@ form button{
     }
     #about{
         text-align: center;
+    }
+    #about h1{
+        font-family: Ralewayl;
     }
     .fter p{
         font-size: 15px;
