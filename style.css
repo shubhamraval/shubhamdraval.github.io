@@ -241,6 +241,7 @@ form button{
     height: 10vh;
     background-color: #000000;
     text-align: center;
+    user-select: none;
     
 }
 .fter p{
