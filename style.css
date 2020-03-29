@@ -51,22 +51,24 @@ body{
 }
 
 #navbar1 ul{
-    float: right;
+    float: right; 	
     margin-right: 20px;
+    line-height: 90px;
+    transition: 500ms;
 }
   
 #navbar1 ul li{
     font-family: Raleway;
     display:inline-block;
-    line-height: 80px;
     margin: 0px  10px;
-    transition: 500ms;
+    /*transition: 500ms;*/
 }
   
 #navbar1 ul li a{
     color:#eeeeee;
     font-size: 15px;
     text-transform: uppercase;
+
 }
   
 .checkbtn{
@@ -240,8 +242,8 @@ form button{
     width: 100%;
     height: 10vh;
     background-color: #000000;
-    text-align: center;
     user-select: none;
+    text-align: center;
     
 }
 .fter p{
