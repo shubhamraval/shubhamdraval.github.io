@@ -2,22 +2,40 @@
     font-family: Raleway;
     src: url(font/Raleway-Medium.ttf);
 }
-  @font-face {
+
+@font-face {
     font-family: Ralewayl;
     src: url(font/Raleway-Light.ttf);
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
 }
-body{
+
+body {
     background-image: url(photos/apple.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #f4f4f4;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient( #e53935 100%, #9c155d 0%);
+}
+
+
 /* FOR NAVBAR */
-#navbar1{
+
+#navbar1 {
     background-color: transparent;
     height: 90px;
     width: 100%;
@@ -31,61 +49,60 @@ body{
     z-index: 100;
 }
 
-.logo{
+.logo {
     line-height: 90px;
 }
 
-.logo img{
+.logo img {
     margin-left: 50px;
     height: 25x;
     width: 25px;
     z-index: 10;
     transform: translateY(-4px);
-  }
+}
 
-.logo span{
+.logo span {
     font-size: 25px;
-    color:#e53935;
+    color: #e53935;
     font-family: Ralewayl;
     transition: 400ms;
 }
 
-#navbar1 ul{
+#navbar1 ul {
     float: right;
     margin-right: 20px;
     line-height: 90px;
     transition: 500ms;
 }
 
-#navbar1 ul li{
+#navbar1 ul li {
     font-family: Raleway;
-    display:inline-block;
-    margin: 0px  10px;
+    display: inline-block;
+    margin: 0px 10px;
     /*transition: 500ms;*/
 }
 
-#navbar1 ul li a{
-    color:#eeeeee;
+#navbar1 ul li a {
+    color: #eeeeee;
     font-size: 15px;
     text-transform: uppercase;
-
 }
 
-.checkbtn{
+.checkbtn {
     font-size: 30px;
     color: #212121;
     float: right;
     line-height: 80px;
-    margin-right:40px;
+    margin-right: 40px;
     cursor: pointer;
     display: none;
 }
 
-#check{
-  display: none;
+#check {
+    display: none;
 }
 
-.fa-bars{
+.fa-bars {
     transform: translateY(-10px);
     font-size: 20px;
     color: #626262;
@@ -93,21 +110,25 @@ body{
 
 
 /* END NAVBAR */
+
+
 /* FOR HOME DIV */
-.home{
+
+.home {
     width: 100%;
     height: 100vh;
     background-image: url(photos/apple.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
-.ltext{
+
+.ltext {
     text-align: center;
     padding-top: 35vh;
-    box-shadow:0 1px 4px rgba(16,16,17,.02), 2 3.4px 16px rgba(16,16,17,.007), 0 12px 30px rgba(16,16,17,.003);
+    box-shadow: 0 1px 4px rgba(16, 16, 17, .02), 2 3.4px 16px rgba(16, 16, 17, .007), 0 12px 30px rgba(16, 16, 17, .003);
 }
 
-.ltext h2{
+.ltext h2 {
     font-family: Ralewayl;
     word-spacing: 5px;
     margin-bottom: 50px;
@@ -116,277 +137,311 @@ body{
     text-align: center;
 }
 
-.ltext a{
+.ltext a {
     font-family: Ralewayl;
     padding: 10px 15px;
     margin-right: 20px;
     text-decoration: none;
     border: 1px solid #e53935;
-    color:#e53935;
+    color: #e53935;
     border-radius: 5px;
     transition: 500ms;
 }
 
-.ltext a:hover{
+.ltext a:hover {
     border-radius: 20px;
 }
+
+
 /* END HOME DIV */
+
+
 /* ABOUT DIV */
-#about{
+
+#about {
     text-align: center;
     margin-bottom: 0;
     margin-top: 0;
     /* text-align: center; */
-    color:#212121;
+    color: #212121;
     background-color: #eeeeee;
     border-radius: 0px;
     z-index: 0;
 }
-#about h1{
-    color:#e53935;
+
+#about h1 {
+    color: #e53935;
     font-weight: 450;
     /* font-family: Raleway; */
     font-size: 50px;
     /* text-align: center; */
     padding: 0 10%;
 }
-#about p{
+
+#about p {
     z-index: -1;
     padding: 0 10%;
     /* font-family: Ralewayl; */
-    font-size:22px;
+    font-size: 22px;
 }
-#abtc{
+
+#abtc {
     font-family: Ralewayl;
     width: 100%;
     height: inherit;
     background-color: #eee;
     padding: 0px 9%;
 }
-#abtc h3{
+
+#abtc h3 {
     margin-left: 40px;
 }
+
+
 /* END ABOUT DIV */
+
+
 /* Projects */
-#project{
+
+#project {
     width: 100%;
-    height:auto;
+    height: auto;
     background-color: #ffffff;
     margin-bottom: 0px;
 }
-#wonder{
+
+#wonder {
     width: 60%;
-    height:150px;
-    background: linear-gradient(to right,#212121 0%, #000000 100%);
+    height: 150px;
+    background: linear-gradient(to right, #212121 0%, #000000 100%);
     border-radius: 20px;
     margin: 20px 20px;
-    box-shadow: 0 10px 20px rgba(16,16,17,.02), 0 34px 80px rgba(16,16,17,.007), 0 12px 30px rgba(16,16,17,.003);
+    float: right;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, .12), 0 7px 10px -5px rgba(0, 0, 0, .15);
     line-height: 150px;
 }
 
-#even{
+#even {
     width: 60%;
-    height:150px;
-    background:linear-gradient(to right, rgb(142, 45, 226) 0%, rgb(74, 0, 224) 100%);
+    height: 150px;
+    background: linear-gradient(to right, rgb(142, 45, 226) 0%, rgb(74, 0, 224) 100%);
     border-radius: 20px;
     margin: 20px 20px;
+    float: left;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, .12), 0 7px 10px -5px rgba(0, 0, 0, .15);
     line-height: 150px;
 }
 
-#pp{
+#pp {
     width: 60%;
-    height:150px;
-    background: linear-gradient(to right,#ff9800 0%, #e65100 100%);
+    height: 150px;
+    background: linear-gradient(to right, #ff9800 0%, #e65100 100%);
     border-radius: 20px;
     margin: 20px 20px;
+    float: right;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, .12), 0 7px 10px -5px rgba(0, 0, 0, .15);
     line-height: 150px;
 }
 
-#comingsn{
+#comingsn {
     width: 60%;
-    height:150px;
+    height: 150px;
     background: transparent;
     border-radius: 20px;
-    background: linear-gradient(to right,#e91e63 0%, #880e4f 100%);
+    float: left;
+    background: linear-gradient(to right, #e91e63 0%, #880e4f 100%);
     margin: 20px 20px;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, .12), 0 7px 10px -5px rgba(0, 0, 0, .15);
     line-height: 150px;
 }
+
+
 /* End Project */
+
+
 /* BLOG */
-#blog{
-    width:100%;
-    height:100vh;
+
+#blog {
+    width: 100%;
+    height: 100vh;
     background: #ffffff;
     opacity: 0.9;
 }
+
+
 /* END BLOG */
+
+
 /* CONTACT */
-#contact{
+
+#contact {
     width: 100%;
     height: auto;
     background-color: #ffffff;
 }
-form{
+
+form {
     margin: 0px 20%;
 }
-form button{
+
+form button {
     text-align: center;
     border: none;
-    background-color: #e53935;
     padding: 10px 20px;
     color: #eeeeee;
+    background-color: #e53935;
     border-radius: 4px;
 }
 
-form button:hover{
-  background-color: #ef5350;
+form button:hover {
+    background-color: #ef5350;
 }
+
+
 /* END CONTACT */
+
+
 /* FOOTER */
-.fter{
+
+.fter {
     width: 100%;
     height: 10vh;
     background-color: #000000;
     text-align: center;
-    user-select: none;
 }
-.fter p{
+
+.fter p {
     font-family: Ralewayl;
     font-size: 17px;
     color: #eeeeee;
     line-height: 10vh;
     margin: 0;
 }
+
+
 /* END FOOTER */
 
+
 /* RESPONSIVENES */
+
 @media (max-width:900px) {
-    #contact h3{
+    #contact h3 {
         font-family: Ralewayl;
     }
-    #blog h3{
+    #blog h3 {
         font-family: Ralewayl;
     }
-    #project h3{
+    #project h3 {
         font-family: Ralewayl;
     }
-    form{
+    form {
         margin: 0px 10%;
     }
-    #osp{
+    #osp {
         float: none;
         margin: 5px 0px;
     }
-    #abtc h3{
+    #abtc h3 {
         text-align: center;
         font-family: Ralewayl;
         margin: 0px;
     }
-    #wonder{
-        width: 100%;
-        margin: 10px 0px;
+    #wonder {
+        width: 85%;
+        float: none;
+        margin: 10px auto;
     }
-
-    #even{
-        width: 100%;
-        margin: 10px 0px;
+    #even {
+        width: 85%;
+        float: none;
+        margin: 10px auto;
     }
-
-    #pp{
-        width: 100%;
-        margin: 10px 0px;
+    #pp {
+        text-align: center;
+        /* padding: 0 0 0 0; */
+        float: none;
+        width: 85%;
+        margin: 10px auto;
     }
-
-    #comingsn{
-        width: 100%;
-        margin: 10px 0px;
+    #comingsn {
+        width: 85%;
+        float: none;
+        margin: 10px auto;
     }
-    #about{
+    #about {
         text-align: center;
     }
-    #about h1{
+    #about h1 {
         font-family: Ralewayl;
     }
-    .fter p{
+    .fter p {
         font-size: 15px;
     }
-    #about span{
+    #about span {
         font-size: 17px;
     }
-
-    #about p{
+    #about p {
         font-size: 17px;
     }
-
-    .ltext{
+    .ltext {
         text-align: center;
         padding-top: 25vh;
     }
-
-    .ltext h2{
+    .ltext h2 {
         font-size: 35px;
     }
-
-    .ltext a{
+    .ltext a {
         font-family: Ralewayl;
         padding: 10px 15px;
         margin-right: 10px;
         text-decoration: none;
         border: 1px solid #e53935;
-        color:#e53935;
+        color: #e53935;
         border-radius: 5px;
         transition: 500ms;
     }
-
-    .logo span{
+    .logo span {
         font-size: 20px;
-        color:#e53935;
+        color: #e53935;
         font-family: Ralewayl;
         transition: 400ms;
     }
-
-.logo img{
-    height: 20px;
-    width: 20px;
-    margin-left: 0px;
+    .logo img {
+        height: 20px;
+        width: 20px;
+        margin-left: 0px;
+    }
+    label.logo {
+        padding-left: 20px;
+    }
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        width: 100%;
+        height: 100vh;
+        background: #212121;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        position: fixed;
+    }
+    #navbar1 ul li {
+        display: block;
+        margin: 10px 0px;
+    }
+    #navbar1 ul li a {
+        color: #fff;
+        font-size: 20px;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+    .fter p {
+        font-size: 12.5px;
+    }
 }
 
-label.logo{
-    padding-left: 20px;
-}
 
-.checkbtn{
-    display: block;
-}
-
-ul{
-    width: 100%;
-    height: 100vh;
-    background: #212121;
-    top:80px;
-    left:-100%;
-    text-align: center;
-    transition: all .5s;
-    position: fixed;
-}
-
-#navbar1 ul li{
-    display: block;
-    margin: 10px 0px;
-}
-
-#navbar1 ul li a{
-    color: #fff;
-    font-size: 20px;
-}
-
-#check:checked ~ ul{
-    left:0;
-}
-
-.fter p{
-    font-size: 10px;
-}
-
-}
 /* END */
